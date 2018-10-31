@@ -159,6 +159,8 @@
     <ClCompile Include="1-navigation\1.1-goto-definition\1.1.4-overloading.cpp" />
     <ClCompile Include="1-navigation\1.1-goto-definition\1.1.5-overloading-2.cpp" />
     <ClCompile Include="1-navigation\1.1-goto-definition\1.1.6-adl.cpp" />
+    <ClCompile Include="1-navigation\1.1-goto-definition\1.1.7-multi-tu-definitions.cpp" />
+    <ClCompile Include="1-navigation\1.1-goto-definition\1.1.7-multi-tu.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
