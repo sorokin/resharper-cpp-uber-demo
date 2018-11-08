@@ -94,6 +94,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)3rd-party;$(ProjectDir)10-unit-testing;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,6 +126,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)3rd-party;$(ProjectDir)10-unit-testing;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -154,6 +156,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="1-navigation\1.1-goto-definition\1.1.1-trivial.cpp" />
+    <ClCompile Include="1-navigation\1.1-goto-definition\1.1.10-auto.cpp" />
     <ClCompile Include="1-navigation\1.1-goto-definition\1.1.2-bases.cpp" />
     <ClCompile Include="1-navigation\1.1-goto-definition\1.1.3-namespaces.cpp" />
     <ClCompile Include="1-navigation\1.1-goto-definition\1.1.4-overloading.cpp" />
@@ -161,6 +164,44 @@
     <ClCompile Include="1-navigation\1.1-goto-definition\1.1.6-adl.cpp" />
     <ClCompile Include="1-navigation\1.1-goto-definition\1.1.7-multi-tu-definitions.cpp" />
     <ClCompile Include="1-navigation\1.1-goto-definition\1.1.7-multi-tu.cpp" />
+    <ClCompile Include="1-navigation\1.1-goto-definition\1.1.8-dependent-names.cpp" />
+    <ClCompile Include="1-navigation\1.1-goto-definition\1.1.9-dependent-names-adl.cpp" />
+    <ClCompile Include="1-navigation\1.2-goto-type-of-symbol.cpp" />
+    <ClCompile Include="1-navigation\1.3-goto-everything.cpp" />
+    <ClCompile Include="1-navigation\1.4-gutters\1.4.1-gutters.cpp" />
+    <ClCompile Include="1-navigation\1.5-find-usages\1.5.1-trivial.cpp" />
+    <ClCompile Include="1-navigation\1.5-find-usages\1.5.2-constructors.cpp" />
+    <ClCompile Include="10-unit-testing\counted.cpp" />
+    <ClCompile Include="10-unit-testing\debugger-demo.cpp" />
+    <ClCompile Include="10-unit-testing\gtest\gtest-all.cc" />
+    <ClCompile Include="10-unit-testing\gtest\gtest_main.cc" />
+    <ClCompile Include="10-unit-testing\set-testing.cpp" />
+    <ClCompile Include="2-analyses\2.1-highlightings\2.1.1-non-virtual-destructor.cpp" />
+    <ClCompile Include="2-analyses\2.1-highlightings\2.2.2-pair-constructor.cpp" />
+    <ClCompile Include="2-analyses\2.1-highlightings\2.2.3-missing-noexcept.cpp" />
+    <ClCompile Include="2-analyses\2.1-highlightings\2.2.4-inheritance.cpp" />
+    <ClCompile Include="2-analyses\2.1-highlightings\2.2.5-auto-import.cpp" />
+    <ClCompile Include="2-analyses\2.1-highlightings\2.2.6-clang-tidy.cpp" />
+    <ClCompile Include="3-generate\3.1-overriding.cpp" />
+    <ClCompile Include="3-generate\3.2-implementation.cpp" />
+    <ClCompile Include="3-generate\3.3-members.cpp" />
+    <ClCompile Include="3-generate\3.4-cases.cpp" />
+    <ClCompile Include="3-generate\3.5-preprocessor.cpp" />
+    <ClCompile Include="3-generate\3.6-preprocessor-2.cpp" />
+    <ClCompile Include="3-generate\3.7-specify-type-explicitly.cpp" />
+    <ClCompile Include="3-generate\3.8-create-from-usage.cpp" />
+    <ClCompile Include="4-refactorings\4.1-introduce-variable.cpp" />
+    <ClCompile Include="5-completion\5.1-basic.cpp" />
+    <ClCompile Include="5-completion\5.2-begend.cpp" />
+    <ClCompile Include="6-formatter\6.1-trivial.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="1-navigation\1.4-gutters\1.4.1-gutters.h" />
+    <ClInclude Include="10-unit-testing\counted.h" />
+    <ClInclude Include="10-unit-testing\gtest\gtest.h" />
+    <ClInclude Include="2-analyses\2.1-highlightings\2.2.5-auto-import.h" />
+    <ClInclude Include="3-generate\3.1-overriding.h" />
+    <ClInclude Include="3-generate\3.2-implementation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
