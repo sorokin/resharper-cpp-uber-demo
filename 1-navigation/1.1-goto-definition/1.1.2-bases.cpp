@@ -1,3 +1,4 @@
+#ifdef __RESHARPER__
 #include <cstdint>
 
 struct a        { typedef int type; };
@@ -15,3 +16,5 @@ void foo()
     d::type a;
     vd::type b;
 }
+
+#endif

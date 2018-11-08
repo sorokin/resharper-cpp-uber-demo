@@ -1,3 +1,4 @@
+#include <string>
 #include <vector>
 
 void goto_definition_1()

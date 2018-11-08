@@ -1,3 +1,4 @@
+#ifdef __RESHARPER__
 #include <iostream>
 #include <iomanip>
 #include <vector>
@@ -26,3 +27,5 @@ namespace app
         (print)(std::cout, v);
     }
 }
+
+#endif

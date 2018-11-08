@@ -1,3 +1,4 @@
+//#ifdef __RESHARPER__
 #include <string>
 #include <variant>
 
@@ -24,5 +25,5 @@ void g115()
         [](baz const&) { return "baz"s; }
     }, v).append("hello");
 }
-
 }
+//#endif

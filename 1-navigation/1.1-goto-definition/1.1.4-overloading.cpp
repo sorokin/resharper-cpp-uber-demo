@@ -1,3 +1,4 @@
+#ifdef __RESHARPER__
 #include <type_traits>
 
 namespace
@@ -23,3 +24,5 @@ void g114()
 }
 
 }
+
+#endif
